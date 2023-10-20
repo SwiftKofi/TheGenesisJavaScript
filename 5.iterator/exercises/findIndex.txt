@@ -1,0 +1,61 @@
+Exercise 1:
+Write a function that takes an array of numbers and returns the index of the 
+first negative number using findIndex.
+
+Exercise 2:
+Write a function that takes an array of strings and returns the index of the 
+first string that starts with the letter 'A' using findIndex.
+
+Exercise 3:
+Write a function that takes an array of objects with a 'name' property and 
+returns the index of the object with a specific name using findIndex.
+
+Exercise 4:
+Write a function that takes an array of numbers and returns the index of the 
+first number that is divisible by 7 using findIndex.
+
+Exercise 5:
+Write a function that takes an array of objects with a 'completed' 
+property (boolean) and returns the index of the first object that is not 
+completed using findIndex.
+
+Exercise 6:
+Write a function that takes an array of strings and returns the index of 
+the first string that has more than 10 characters using findIndex.
+
+Exercise 7:
+Write a function that takes an array of objects with 'age' properties and 
+returns the index of the oldest person using findIndex.
+
+Exercise 8:
+Write a function that takes an array of strings and returns the index of the 
+first string that contains the word 'JavaScript' using findIndex.
+
+Exercise 9:
+Write a function that takes an array of objects with 'price' properties and 
+returns the index of the cheapest product using findIndex.
+
+Exercise 10:
+Write a function that takes an array of numbers and returns the index of the 
+first number that is greater than 100 using findIndex.
+
+Exercise 11:
+Write a function that takes an array of strings and returns the index of the 
+first string that is a palindrome using findIndex.
+
+Exercise 12:
+Write a function that takes an array of objects with 'quantity' properties and 
+returns the index of the first object that has a quantity greater than 10 using 
+findIndex.
+
+Exercise 13:
+Write a function that takes an array of strings and returns the index of the first 
+string that ends with the letter 's' using findIndex.
+
+Exercise 14:
+Write a function that takes an array of objects with 'rating' properties and returns
+the index of the object with the highest rating using findIndex.
+
+Exercise 15:
+Write a function that takes an array of strings and returns the index of the 
+first string that contains only uppercase letters using findIndex.

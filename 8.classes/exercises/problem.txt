@@ -1,0 +1,239 @@
+
+=========================================================================
+CONSTRUCTOR CONSTRUCTOR CONSTRUCTOR CONSTRUCTOR CONSTRUCTOR CONSTRUCTOR 
+=========================================================================
+1. Create an empty class named Surgeon.
+Checkpoint 2 Passed
+
+Hint
+Use the class keyword and opening and closing curly braces.
+
+2. Inside the Surgeon class, create a constructor() method that accepts two parameters:
+name and department.
+
+Checkpoint 3 Passed
+
+Hint
+Use the constructor() keyword, with name and department parameters.
+
+3. Inside the Surgeon constructor(), create name and department properties and set 
+them equal to your input parameters.
+
+Checkpoint 4 Passed
+
+Hint
+Use the following syntax to set your properties to constructor() inputs:
+
+constructor(inputOne, inputTwo) {
+  this.inputOne = inputOne;
+  this.inputTwo = inputTwo;
+}
+ 
+=================================================================================
+INSTANCES INSTANCES INSTANCES INSTANCES INSTANCES INSTANCES INSTANCES INSTANCES
+=================================================================================
+class Surgeon {
+  constructor(name, department) {
+    this.name = name;
+    this.department = department;
+  }
+}
+
+1. Create an instance of the Surgeon class — set the name to 'Francisco Romero' and 
+department to 'Cardiovascular'.
+
+Save the instance to a constant variable called surgeonRomero.
+
+Checkpoint 2 Passed
+
+Hint
+To create an instance of a class, you can use the syntax below:
+
+const instance = new ClassName('arg1', 'arg2');
+ 
+2. Create an instance of the Surgeon class — set the name to 'Ruth Jackson' and 
+department to 'Orthopedics'.
+
+Save the instance to a constant variable called surgeonJackson.
+
+Checkpoint 3 Passed
+
+Hint
+Here is an example of creating an instance of the Surgeon class.
+
+const surgeonAlZahrawi = new Surgeon('Al-Zahrawi', 'Neurology');
+ 
+============================================================
+METHODS METHODS METHODS METHODS METHODS METHODS METHODS
+=============================================================
+class Surgeon {
+  constructor(name, department) {
+    this._name = name;
+    this._department = department;
+    this._remainingVacationDays = 20;
+  }
+
+  get name(){
+    return this._name;
+  }
+
+  get department(){
+    return this._department;
+  }
+
+  get remainingVacationDays(){
+    return this._remainingVacationDays;
+  }
+
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+}
+
+const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
+const surgeonJackson = new Surgeon('Ruth Jackson', 'Orthopedics');
+
+1. In the Surgeon constructor, prepend the name and department properties with an 
+underscore (_).
+
+Checkpoint 2 Passed
+2. Inside of the constructor(), add a property named _remainingVacationDays and set 
+it equal to 20.
+
+Checkpoint 3 Passed
+3. Under the constructor(), create a getter called name that returns the value saved
+to _name.
+
+Checkpoint 4 Passed
+Hint
+If you need help, take a look at getter syntax in the Mozilla Developer Network.
+
+4. Under the name getter, create a getter called department that returns the value 
+saved to _department.
+
+Checkpoint 5 Passed
+
+Hint
+If you need help, take a look at getter syntax in the Mozilla Developer Network.
+
+5. Under the department getter, create a getter called remainingVacationDays that 
+returns the value saved to _remainingVacationDays.
+
+Checkpoint 6 Passed
+
+Hint
+Use the following syntax to create a getter:
+ 
+get keyOne() {
+  return this._keyOne;
+}
+ 
+6. Under the remainingVacationDays getter, create a method called takeVacationDays 
+that accepts one argument named daysOff.
+
+Inside of the method, subtract daysOff from the number saved to _remainingVacationDays. 
+Set _remainingVacationDays to the result.
+
+Checkpoint 7 Passed
+
+Hint
+Class methods are created with the following syntax:
+
+methodOne(keyOne) {
+  // Do something here
+}
+
+=============================================================================
+METHOD CALLS METHOD CALLS METHOD CALLS METHOD CALLS METHOD CALLS METHOD CALLS
+=============================================================================
+
+class Surgeon {
+  constructor(name, department) {
+    this._name = name;
+    this._department = department;
+    this._remainingVacationDays = 20;
+}
+  
+get name() {
+    return this._name;
+}
+  
+get department() {
+    return this._department;
+}
+  
+get remainingVacationDays() {
+    return this._remainingVacationDays;
+}
+  
+takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+}
+}
+
+1. At the bottom of main.js, use console.log() to print the value saved to the name 
+property of the surgeonRomero object.
+
+Checkpoint 2 Passed
+
+Hint
+If you need help, take a look at accessing property syntax in the Mozilla 
+Developer Network.
+
+2.Call .takeVacationDays() on surgeonRomero, with an input of 3.
+
+Checkpoint 3 Passed
+
+Hint
+If you need help, take a look at accessing property syntax in the Mozilla Developer 
+Network.
+
+3. After the call to .takeVacationDays(), use console.log() to print the value saved 
+to the remainingVacationDays property of the surgeonRomero instance.
+
+Checkpoint 4 Passed
+
+Hint
+You can access a property from an object by appending it with a period and the 
+property’s getter name. See below:
+
+// Print a value
+console.log(myObject.myValue);
+ 
+// Call a method
+myObject.myMethod();
+
+
+...................................................................................
+Write an empty class called Person. In the constructor pass firstname and last name
+as parameters.
+This class has a getter called fullName that
+returns the fullname by combining the first and last names. 
+
+It also has a setter called fullName that allows you to update the first and last 
+names by providing a fullName string.
+class Person {
+    constructor(firstName, lastName) {
+      this._firstName = firstName;
+      this._lastName = lastName;
+    }
+  
+    get fullName() {
+      return `${this._firstName} ${this._lastName}`;
+    }
+  
+    set fullName(newFullName) {
+      const [firstName, lastName] = newFullName.split(' ');
+      this._firstName = firstName;
+      this._lastName = lastName;
+    }
+}
+  
+// Creating an instance of the Person class
+const person = new Person('John', 'Doe');
+  
+// Using the getter and setter
+console.log(person.fullName); // Output: John Doe
+  
+person.fullName = 'Jane Smith';
+console.log(person.fullName); // Output: Jane Smith

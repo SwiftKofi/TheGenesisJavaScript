@@ -1,0 +1,49 @@
+QUE1. Write a function that takes an array as a parameter and prints all the elements
+of the array using a forEach loop.
+
+QUE2. Write a function that takes an array of numbers as a parameter and calculates 
+the sum of all the numbers using a forEach loop.
+
+QUE3. Write a function that takes an array as a parameter and prints the index and 
+value of each element using a forEach loop.
+
+QUE4. Write a function that takes an array of strings as a parameter and concatenates
+all the strings into a single string using a forEach loop.
+
+QUE5. Write a function that takes an array of numbers as a parameter and checks if all
+the numbers in the array are positive using a forEach loop. Return true if all numbers 
+are positive, and false otherwise.
+
+QUE6. Write a function that takes an array of numbers as a parameter and finds the 
+smallest number in the array using a forEach loop.
+
+QUE7. Write a function that takes an array of strings as a parameter and counts the 
+number of vowels (a, e, i, o, u) in each string using a forEach loop. Print the 
+count for each string.
+
+QUE8. Write a function that takes an array of numbers as a parameter and calculates 
+the average of all the numbers using a forEach loop.
+
+QUE9. Write a function that takes an array of strings as a parameter and prints the 
+strings in uppercase using a forEach loop.
+
+QUE10. Write a function that takes an array of objects representing books, where each 
+object contains a book's title and author. The function should print the title and 
+author of each book using a forEach loop.
+
+QUE11. Write a function that takes an array of numbers as a parameter and returns a 
+new array with only the even numbers from the original array, using a forEach loop.
+
+QUE12. Write a function that takes an array of strings as a parameter and checks if 
+any string in the array is a palindrome using a forEach loop. Return true if a 
+palindrome exists, and false otherwise.
+
+QUE13. Write a function that takes an array of objects as a parameter, where each 
+object represents a person with properties like name and age. The function should 
+print the name and age of each person using a forEach loop.
+
+QUE14. Write a function that takes an array of numbers as a parameter and calculates 
+the product of all the numbers using a forEach loop.
+
+QUE15. Write a function that takes an array of strings as a parameter and returns a 
+new array with the lengths of each string using a forEach loop.

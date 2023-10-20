@@ -1,0 +1,48 @@
+QUE1. Write a function that takes an object as a parameter and prints all the keys and
+their corresponding values using a for...in loop.
+
+QUE2. Write a function that takes an array as a parameter and prints all the elements 
+of the array using a for...in loop.
+
+QUE3. Write a function that takes an object as a parameter and calculates the sum of 
+all the values using a for...in loop.
+
+QUE4. Write a function that takes an array as a parameter and calculates the product 
+of all the elements using a for...in loop.
+
+QUE5. Write a function that takes an object as a parameter and checks if a specific 
+key exists in the object using a for...in loop. Return true if the key exists, and 
+false otherwise.
+
+QUE6. Write a function that takes an array as a parameter and checks if a specific 
+element exists in the array using a for...in loop. Return true if the element exists,
+and false otherwise.
+
+QUE7. Write a function that takes an object as a parameter and counts the number of 
+keys using a for...in loop. Return the count.
+
+QUE8. Write a function that takes an array as a parameter and counts the number of 
+even elements using a for...in loop. Return the count.
+
+QUE9. Write a function that takes an object as a parameter and finds the key with the
+highest value using a for...in loop. Return the key.
+
+QUE10. Write a function that takes an array as a parameter and finds the index of the
+first occurrence of a specific element using a for...in loop. Return the index.
+
+QUE11. Write a function that takes an object as a parameter and checks if all the 
+values are of a specific data type (e.g., number, string) using a for...in loop. 
+Return true if all values are of the specified type, and false otherwise.
+
+QUE12. Write a function that takes an array as a parameter and checks if all the 
+elements satisfy a specific condition (e.g., greater than 0) using a for...in loop. 
+Return true if all elements satisfy the condition, and false otherwise.
+
+QUE13. Write a function that takes an object as a parameter and returns an array of 
+all the keys using a for...in loop.
+
+QUE14. Write a function that takes an array as a parameter and returns a new array 
+with all the elements doubled using a for...in loop.
+
+QUE15. Write a function that takes an object as a parameter and returns an array of 
+all the values using a for...in loop.

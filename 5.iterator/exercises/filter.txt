@@ -1,0 +1,56 @@
+QUE1. Write a function that takes an array of numbers as a parameter and returns a 
+new array with only the even numbers using the filter() method.
+
+QUE2. Write a function that takes an array of strings as a parameter and returns a 
+new array with only the strings that have more than 5 characters using the filter() 
+method.
+
+QUE3. Write a function that takes an array of objects representing books, where each 
+object contains a book's title and author. The function should return a new array 
+with only the books written by a specific author using the filter() method.
+
+QUE4. Write a function that takes an array of numbers as a parameter and returns a 
+new array with only the numbers greater than 10 using the filter() method.
+
+QUE5. Write a function that takes an array of strings as a parameter and returns a 
+new array with only the strings that contain a specific substring using the filter() 
+method.
+
+QUE6. Write a function that takes an array of objects representing products, where 
+each object contains a product's name and price. The function should return a new 
+array with only the products that are on sale (i.e., have a price lower than a 
+certain threshold) using the filter() method.
+
+QUE7. Write a function that takes an array of strings as a parameter and returns a 
+new array with only the strings that start with a vowel (a, e, i, o, u) using the 
+filter() method.
+
+QUE8. Write a function that takes an array of numbers as a parameter and returns a 
+new array with only the prime numbers using the filter() method.
+
+QUE9. Write a function that takes an array of objects representing students, where 
+each object contains a student's name and age. The function should return a new 
+array with only the students who are above a certain age using the filter() method.
+
+QUE10. Write a function that takes an array of strings as a parameter and returns a 
+new array with only the unique strings (removing duplicates) using the filter() 
+method.
+
+QUE11. Write a function that takes an array of objects representing movies, where 
+each object contains a movie's title and genre. The function should return a new 
+array with only the movies that belong to a specific genre using the filter() method.
+
+QUE12. Write a function that takes an array of numbers as a parameter and returns a 
+new array with only the numbers that are divisible by 3 using the filter() method.
+
+QUE13. Write a function that takes an array of strings as a parameter and returns a 
+new array with only the strings that are palindromes (read the same forwards and 
+backwards) using the filter() method.
+
+QUE14. Write a function that takes an array of objects representing students, where 
+each object contains a student's name and grades. The function should return a new 
+array with only the students who have an average grade above a certain threshold 
+using the filter() method.
+
+QUE15. Write a function that takes an array of strings as a parameter and returns a 
+new array with only the strings that are all uppercase using the filter() method

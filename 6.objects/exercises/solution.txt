@@ -1,0 +1,110 @@
+4. Sure, here's another example of an object with methods. Let's create an object 
+to represent a basic calculator that can perform addition, subtraction, 
+multiplication, and division:
+
+const calculator = {
+  // Method to add two numbers
+  add: function(num1, num2) {
+    return num1 + num2;
+  },
+
+  // Method to subtract two numbers
+  subtract: function(num1, num2) {
+    return num1 - num2;
+  },
+
+  // Method to multiply two numbers
+  multiply: function(num1, num2) {
+    return num1 * num2;
+  },
+
+  // Method to divide two numbers
+  divide: function(num1, num2) {
+    if (num2 !== 0) {
+      return num1 / num2;
+    } else {
+      return "Cannot divide by zero!";
+    }
+  }
+};
+
+// Example usage:
+console.log(calculator.add(5, 3));      // Output: 8
+console.log(calculator.subtract(10, 4)); // Output: 6
+console.log(calculator.multiply(2, 6));  // Output: 12
+console.log(calculator.divide(10, 2));   // Output: 5
+console.log(calculator.divide(8, 0));    // Output: "Cannot divide by zero!"
+
+
+5. Create an object to return full name of a user and increase age by 1
+// Example object with methods
+const person = {
+    : "John",
+  lastName: "Doe",
+  age: 30,
+
+  // Method to get the full name
+  getFullName: function() {
+    return this.firstName + " " + this.lastName;
+  },
+
+  // Method to increase the age
+  increaseAge: function() {
+    this.age++;
+  }
+};
+
+// Accessing object methods
+console.log(person.getFullName()); // Output: "John Doe"
+
+person.increaseAge();
+console.log(person.age); // Output: 31
+
+
+6. Let's create an object to represent a shopping cart. We'll define properties to 
+store the items in the cart and some methods to interact with the cart, such as 
+adding items, removing items, calculating the total price, and displaying the cart 
+contents:
+
+const shoppingCart = {
+  items: [],
+
+// Method to add an item to the cart
+addItem: function(itemName, price, quantity) {
+    const item = {
+      name: itemName,
+      price: price,
+      quantity: quantity
+    };
+    this.items.push(item);
+},
+
+// Method to remove an item from the cart
+  removeItem: function(itemName) {
+    this.items = this.items.filter(item => item.name !== itemName);
+},
+
+// Method to calculate the total price of the items in the cart
+calculateTotalPrice: function() {
+    let totalPrice = 0;
+    this.items.forEach(item => {
+      totalPrice += item.price * item.quantity;
+    });
+    return totalPrice;
+},
+
+// Method to display the cart contents
+displayCart: function() {
+    console.log("Shopping Cart Contents:");
+    this.items.forEach(item => {
+      console.log(`${item.name} - Price: $${item.price}, Quantity: ${item.quantity}`);
+    });
+  }
+};
+
+// Example usage (not interactive, just an example):
+shoppingCart.addItem("Shirt", 20, 2);
+shoppingCart.addItem("Jeans", 40, 1);
+shoppingCart.addItem("Shoes", 50, 1);
+shoppingCart.displayCart();
+console.log("Total Price:", shoppingCart.calculateTotalPrice());

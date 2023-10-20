@@ -1,0 +1,773 @@
+THE THIS KEYWORD THE THIS KEYWORD THE THIS KEYWORD THE THIS KEYWORD THE THIS KEYWORD
+
+EXAMPLE:
+const goat = {
+  dietType: 'herbivore',
+  makeSound() {
+    console.log('baaa');
+  },
+  diet() {
+    console.log(this.dietType);
+  }
+};
+goat.diet(); 
+
+// Output: herbivore
+1. Let’s create a new object to practice using this. In main.js there is an object 
+robot, add a property of model and assign to it a value of '1E78V2'. Add another
+property, energyLevel and assign to it a value of 100.
+
+const robot = {
+  
+};
+
+
+2.Inside the robot object, add a method named provideInfo. Inside the body of 
+provideInfo(), return the following string by using interpolation:
+
+"I am MODEL and my current energy level is ENERGYLEVEL."  
+Replace ‘MODEL’ and ‘ENERGYLEVEL’ with the calling object’s model and energyLevel 
+property. Remember, to get the access to the calling object’s properties inside a 
+method, you have to use the this keyword!
+
+Hint
+If you don’t use this, you will get a reference error. Look at the following example 
+for how to use this:
+
+const goat = {
+  name: 'Billy',
+  color: 'biege',
+  giveDetails(){
+    return `${this.name} is a ${this.color} goat.`
+  }
+};
+ 
+goat.giveDetails();
+
+3. Now to check .provideInfo() has access to the internal properties of robot. 
+Log the result of calling .provideInfo() method on robot to the console.
+
+=========================================================================
+ARROW FUNCTION AND 'this' KEYWORD ARROW FUNCTION AND 'this' KEYWORD
+=========================================================================
+
+4.Currently the .checkEnergy() method is not producing the correct output because it 
+is using arrow function syntax. Refactor, or change, the method to use a function 
+expression. You can write the function using either longhand or shorthand format.
+After refactoring the method, notice that .checkEnergy() has access to the other 
+internal properties of the robot object.
+
+const robot = {
+  energyLevel: 100,
+  checkEnergy:() => {
+    console.log(`Energy is currently at ${this.energyLevel}%.`)
+  }
+}
+
+robot.checkEnergy();
+
+=========================================================================
+PRIVACY PRIVACY PRIVACY PRIVACY PRIVACY PRIVACY PRIVACY PRIVACY PRIVACY
+=========================================================================
+change properties that don’t have setters or getters.
+------------------------------------------------------
+
+const robot = {
+  _energyLevel: 100,
+  recharge(){
+    this._energyLevel += 30;
+    console.log(`Recharged! Energy is currently at ${this._energyLevel}%.`)
+  }
+};
+
+5.0 Below the robot object, reassign the _energyLevel property to 'high'.
+
+Hint
+To reassign a property, you can use dot notation to access the property and 
+then use the = operator to assign it to another value.
+
+5.1 Now take a look at the new recharge method in robot .recharge() 
+will add 30 to _energyLevel.
+What will happen now that _energyLevel isn’t a number?
+Call .recharge() on robot to find out.
+Notice that a funky string is printed to the console! This is known as a 
+side-effect of type-coercion. No need to worry about what this means for now, 
+but it’s important to understand that you can cause unwanted side-effects when 
+mutating objects and their properties.
+
+
+=========================================================================
+GETTER & SETTER GETTER & SETTER GETTER & SETTER GETTER & SETTER
+=========================================================================
+
+6.0.1 Create 5 different objects for 5 people who work at Facebook, 3 are girls and 
+2 are boys. The object should contain the following keys and corresponding values, name,
+job title, salary, age, 2 hobbies, nationality and residence. 
+
+a. Use getter to log all the keys and their value to the console[NB: Log one hobby].
+b. Use setter to log the second hobby of each employee at Facebook and call the method 
+their primary interest, give them all a new hobby of 'deep sea diving'.
+
+Eg.
+
+const Facebook_emp_1 = {
+    firstname: 'Rhoda',
+    lastname: 'Sower',
+    gender:'female',
+    age:27,
+    role: 'Front-End Developer',
+    hobby:['Sky Diving','Swimming'],
+  
+    get headline(){
+      return `${this.firstname} ${this.lastname} is a ${this.role} and she likes ${this.hobby[0]}`;
+    },
+  
+   set primaryInterest(val){
+    console.log("Setting Primary Interest: ")
+    this.hobby.unshift(val.toUpperCase());
+  }
+  
+}
+  
+console.log(Facebook_emp_1.headline);
+Facebook_emp_1.primaryInterest = "Home Automation";
+console.log(Facebook_emp_1.headline)
+
+===============================================================================
+EXERCISE ON GETTERS EXERCISE ON GETTERS EXERCISE ON GETTERS EXERCISE ON GETTERS
+===============================================================================
+
+7.0 In robot, create a getter method named energyLevel using the get keyword. 
+Leave function body blank for now.
+
+Hint
+The robot object should now look like:
+
+const robot = {
+  _model: '1E78V2',
+  _energyLevel: 65
+}
+Remember to separate the properties by commas.
+
+7.1 Inside the getter method, add an if statement to check if this._energyLevel is 
+a number using the typeof operator. If that condition is truthy, return 'My current 
+energy level is ENERGYLEVEL'. Replace ENERGYLEVEL with the value of this._energyLevel.
+Make sure you return the string and not logging it to the console.
+
+Hint
+When we use the typeof operator on a variable will return a string that contains the 
+name of the data type. If the string is 'number' then the variable is a number 
+datatype.
+
+let test = 42
+typeof test // 'number'
+
+7.2 If this._energyLevel isn’t a number it could be that the _energyLevel property was 
+altered. Let’s add a default return statement for when such a scenario arises.
+
+Add an else statement that returns 'System malfunction: cannot retrieve energy level'.
+
+Hint
+Make sure you return the string and not logging it to the console.
+
+
+7.3 Log the result of calling the getter method energyLevel on robot to the console.
+Notice that the method will return a formatted response rather than just accessing a 
+property!
+
+===============================================================================
+EXERCISE ON SETTERS EXERCISE ON SETTERS EXERCISE ON SETTERS EXERCISE ON SETTERS 
+===============================================================================
+
+8.0 create 5 objects for 5 individuals. Use a setter to make sure the value
+being assigned to age is a number [use typeof method]. See example below as sample
+const person = {
+  _age: 37,
+  set age(newAge){
+    if (typeof newAge === 'number'){
+      this._age = newAge;
+    } else {
+      console.log('You must assign a number to age');
+    }
+  }
+};
+person.age = 40;
+// console.log(person._age); // Logs: 40
+// person.age = '40'; // Logs: You must assign a number to age
+
+
+8.1 const robot = {
+  _model: '1E78V2',
+  _energyLevel: 100,
+  _numOfSensors: 15,
+  get numOfSensors(){
+    if(typeof this._numOfSensors === 'number'){
+      return this._numOfSensors;
+    } else {
+      return 'Sensors are currently down.'
+    }
+  },
+  
+};
+
+Currently, in robot there is a getter method for numOfSensors but no setter method! 
+What if we need to add or remove some sensors? Let’s fix that problem.
+Add a setter method named numOfSensors using the set keyword. Provide a parameter 
+of num. Leave the function body empty for now.
+
+Hint
+Remember to separate your properties using commas. All setters need at least one 
+parameter, to provide a parameter for a setter use the following syntax:
+
+const robot = {
+  _numOfSensors: 15,
+  set numOfSensors(num) {
+    // Empty for now
+  }
+};
+
+8.2 There are a couple of things we should do in the setter method:
+Add a check to see if num is a number using the typeof operator.
+num should also be greater than or equal to 0.
+If both conditions are met, reassign this._numOfSensors to num.
+
+Hint
+You can add another conditional in an if statement using the && operator. If we 
+look at just the property and setter method of robot, it should look like:
+
+const robot = {
+  _numOfSensors: 15,
+  set numOfSensors(num) {
+    if (typeof num === 'number' && num >= 0){
+      this._numOfSensors = num;
+    }
+  }
+};
+
+8.3 Now add an else that logs 'Pass in a number that is greater than or equal to 
+0' to the console.
+
+Hint
+If we look at just the property and setter method of robot, it should look like:
+
+const robot = {
+  _numOfSensors: 15;
+  set numOfSensors(num) {
+    if (typeof num === 'number' && num >= 0){
+      this._numOfSensors = num;
+    } else {
+      console.log('Pass in a number that is greater than or equal to 0');
+    }
+  }
+}
+
+8.4 Use the numOfSensors setter method on robot to assign _numOfSensors to 100.
+Hint
+Using the setter method looks syntactically like reassigning a property.
+
+robot.someSetterMethod = 9001;
+
+8.5 To check that the setter method worked, console.log() robot.numOfSensors
+Hint
+Since we have a getter method in place, we can use the getter method to access 
+the _numOfSensors property of robot.
+
+Syntactically, the getter method looks like we’re accessing a property:
+console.log(robot.numOfSensors);
+
+
+=========================================================================
+GETTER & SETTER GETTER & SETTER GETTER & SETTER GETTER & SETTER
+=========================================================================
+9.0.1 Create an object called person
+9.0.2 Define a private property _fName and lName with an initial value of "John" & 
+"Doe" respectively.
+9.0.3 Define a getter for the name property. When accessing person.name, this 
+getter will be called, and it should return the value of the private property _fName 
+and lName.
+9.0.4  define a setter for the name property. When setting person.name, this setter 
+will be called with the new value provided as newName. The setter should check if the
+new name is a string and updates the private property _fname if it is. If the new name
+is not a string, it logs an error message.
+
+console.log(person.name); // Output: "John"
+
+person.name = "Alice";    // Calling the setter
+console.log(person.name); // Output: "Alice"
+
+person.name = 42;         // Calling the setter with an invalid value
+// Output: "Name must be a string."
+console.log(person.name); // Output: "Alice" (name didn't change due to invalid value)
+
+
+====================================================================================
+FACTORY FUNCTION FACTORY FUNCTION FACTORY FUNCTION FACTORY FUNCTION FACTORY FUNCTION 
+====================================================================================
+A factory function is a function that returns an object and can be reused to make 
+multiple object instances. Factory functions can also have parameters allowing us 
+to customize the object that gets returned.
+....................................................................................
+const monsterFactory = (name, age, energySource, catchPhrase) => {
+  return { 
+    name: name,
+    age: age, 
+    energySource: energySource,
+    scare() {
+      console.log(catchPhrase);
+    } 
+  }
+};
+
+const ghost = monsterFactory('Ghouly', 251, 'ectoplasm', 'BOO!');
+ghost.scare(); // 
+.....................................................................................
+
+9.1.0 Instead of making individual robots like we’ve been doing, let’s make a factory 
+function to make robots as we please!
+
+Create a factory function named robotFactory that has two parameters model and mobile.
+Make the function return an object. In the object, add a key of model with the value 
+of the model parameter. Add another property that has a key of mobile with a value 
+of the mobile parameter.
+
+Then add a method named beep without a parameter that will log 'Beep Boop' to the 
+console.
+
+Hint
+Remember to separate your properties using commas. Your factory function will look 
+like:
+
+const robotFactory = (model, mobile) => {
+  return {
+    model: model,
+    mobile: mobile,
+  }
+}
+
+9.1.1 Use your factory function by declaring a const variable named tinCan. Assign to 
+tinCan the value of calling robotFactory with the first argument of 'P-500' and the 
+second argument of true.
+
+9.1.2 Let’s now check what tinCan can do! Call .beep() on tinCan.
+You should see 'Beep Boop' printed to the console which means the factory function 
+produced a robot object! Play around with tinCan to check the other properties!
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+PROPERTY VALUE SHORTHAND PROPERTY VALUE SHORTHAND PROPERTY VALUE SHORTHAND
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+9.1.3 Use the property value shorthand and refactor the factory function in exercise 
+[9.1.0 - 9.1.2]
+
+Hint
+Remember to separate your properties with commas.
+
+In robotFactory there are a few instances where the property’s key and value share 
+the same name, you can remove the key : portion to destructure the object.
+
+const monsterFactory = (name, age) => {
+  return { 
+    name,
+    age 
+  }
+};
+
+9.2 Create a car factory that produces cars with the following features, 6 seats, 
+v8 engine, auto-park, self-drive. Mercedes, BMW, Rolls Royce, Range Rover are your 
+contractors. Log them to the console with respective names and make sure they have
+all the features they requested.
+Example:
+function name(arg){
+
+    return {
+        company:company,
+        seat:6,
+        engine:'v8',
+        autoDrive:true,
+        autoPark:true
+    };
+}
+const variableName = function name('company name');
+console.log(variableName)
+
+
+...............................................................................................
+DESTRUCTURED ASSIGNMENT DESTRUCTURED ASSIGNMENT DESTRUCTURED ASSIGNMENT DESTRUCTURED ASSIGNMENT
+...............................................................................................
+const robot = {
+  model: '1E78V2',
+  energyLevel: 100,
+  functionality: {
+    beep() {
+      console.log('Beep Boop');
+    },
+    fireLaser() {
+      console.log('Pew Pew');
+    },
+  }
+};
+
+9.3.0 Use destructured assignment to create a const variable named functionality that 
+extracts the functionality property of robot.If you need a reminder on how to use 
+destructured assignment, review the example in the narrative or check the hint.
+
+Hint
+The syntax of using destructured assignment will look like:
+
+const { propertyName } = obj;
+
+9.3.1 Since functionality is referencing robot.functionality we can call the methods 
+available to robot.functionality simply through functionality.
+
+Take advantage of this shortcut and call the .beep() method on functionality.
+
+Hint
+You can think of functionality as the object that was pulled out of 
+robot.functionality. To call .beep(), use dot notation with the name of the method 
+and a set of parentheses:
+
+functionality.beep();
+
+9.4.0 
+const vampire = {
+  name: 'Dracula',
+  residence: 'Transylvania',
+  preferences: {
+    day: 'stay inside',
+    night: 'satisfy appetite'
+  }
+};
+
+Extract all the values from of the object above and print to console using the 
+destructure technique. 
+
+====================================================================================
+BUILT IN OBJECT METHODS BUILT IN OBJECT METHODS BUILT IN OBJECT METHODS BUILT IN OBJ
+====================================================================================
+
+const robot = {
+	model: 'SAL-1000',
+  mobile: true,
+  sentient: false,
+  armor: 'Steel-plated',
+  energyLevel: 75
+};
+
+
+9.5.0 In main.js there is an object, robot. We’d like to grab the property names, 
+otherwise known as keys, and save the keys in an array which is assigned to robotKeys. 
+However, there’s something missing in the method call.
+
+Find out what we have to include by reading MDN’s Object.keys() documentation
+
+9.5.1 Object.entries() will also return an array, but the array will contain more 
+arrays that have both the key and value of the properties in an object.
+
+Declare a const variable named robotEntries and assign to it the entries of robot 
+by calling Object.entries().
+
+To find how to use Object.entries(), read the documentation at MDN.
+
+Hint
+Object.entries() is similar to Object.keys() in how it is called and what arguments 
+it will take. Remember to check with the documentation!
+
+9.5.2 Now what if we want another object that has the properties of robot but with a 
+few additional properties. Object.assign() sounds like a great method to use, but 
+like the previous examples we should check Object.assign() documentation at MDN.
+
+Declare a const variable named newRobot. newRobot will be a new object that has all 
+the properties of robot and the properties in the following 
+object: {laserBlaster: true, voiceRecognition: true}. Make sure that you are not 
+changing the robot object!
+
+Checkpoint 4 Passed
+
+Hint
+When you use Object.assign() it is important to know which argument is the target 
+or source(s). Take a look at MDN’s syntax section and play around with the examples 
+at the top to fully understand how to use Object.assign().
+
+===================================================================================
+PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT
+===================================================================================
+MEAL MAKER PROJECT WITH GETTER & SETTER MEAL MAKER PROJECT WITH GETTER & SETTER
+===================================================================================
+
+10.0 Meal Maker
+A restaurant has hired you to create a function for their website that allows them to
+set a meal and price each morning for Today’s Special. Use your knowledge of getters 
+and setters to make sure anyone who uses the new function can generate a meal and a 
+price for Today’s Special without any embarrassing errors!
+
+If you get stuck during this project or would like to see an experienced developer 
+work through it, click “Get Unstuck” to see a project walkthrough video.
+
+10.1 We’ll hold the meal, price, and their respective getters and setters in an object 
+named menu.
+
+In app.js, create an empty menu object.
+
+
+Hint
+You can create an empty object using the const keyword before the name of the object 
+and set it equal to an empty set of curly brackets ({ }).
+
+10.2. The menu object will hold the meal and price of Today’s Special as properties 
+and they shouldn’t be altered directly.
+
+Within the menu object, create a _meal property with a value of an empty string ('').
+This will eventually hold the name of the meal.
+
+
+Hint
+In JavaScript, it’s a common convention to place an underscore _ before the name of a
+property that should not be altered.
+
+_property: value
+ 
+10.3 Next, add a _price property with a value of 0. This will eventually hold the 
+price of the meal, and should also not be altered directly
+
+Hint
+Be sure to place a comma , after the _meal property-value pair as well as any 
+subsequent properties and methods.
+
+10.4 We know properties that begin with _ should not be directly manipulated. But 
+just to validate this knowledge, let’s test it out!
+
+Below the menu object, directly manipulate the two properties by assigning _meal a 
+number value and _price a string value.
+
+Then, below the new assignments, console.log() the menu object to see how not type 
+checking these values could cause confusion for a website visitor!
+
+
+Hint
+You can directly manipulate an object property using the following syntax:
+
+object.property = value;
+
+..........................................................................
+ADD SETTER METHOD ADD SETTER METHOD ADD SETTER METHOD ADD SETTER METHOD
+..........................................................................
+
+10.5 To safely reassign the two menu properties, we can add setters that type check 
+the values being assigned.
+
+Below the properties, use the set keyword to create a meal setter method with 
+mealToCheck as a parameter. Leave the function body empty for now.
+
+Hint
+Syntactically, a setter is created using the set keyword, followed by a function 
+declaration.
+
+set functionName() {
+ 
+}
+ 
+10.6. In the body of the setter method, create an if statement that checks if 
+mealToCheck is a string. If it is, return the object’s _meal property with 
+mealToCheck assigned as the value.
+
+
+Hint
+You can access the menu object’s property using the this keyword.
+
+One way to check that the value is a ‘string’, is to use the typeof operator.
+
+
+10.7. Utilizing the same procedures as above, use the set keyword to create a price 
+setter with priceToCheck as a parameter. This method should make sure the value 
+associated with _price is always a number.
+
+
+Hint
+Just like before, create an if statement using typeof to check if priceToCheck is a 
+number. If it is, return the assignment of priceToCheck to the menu object’s _price 
+property.
+
+10.8 Below the menu object, set the values of _meal and _price using the newly created 
+setter methods. Then, console.log() the menu object to check their functionality.
+
+
+Hint
+Since the values are being assigned outside of the scope of the menu object, the this
+keyword is not needed here. Instead, reference the object, followed by the setter 
+like below:
+
+object.setter = value;
+ 
+And remember, setter methods do not need parentheses.
+
+Add a Getter Method
+
+10.9 Now it’s time to safely return the values of the _meal and _price properties in
+a readable form. Instead of directly accessing the properties, we can use a getter 
+method that proactively checks if a meal and price have been properly set, before 
+returning the values.
+
+Below the setters, use the get keyword to create a todaysSpecial method. Leave the 
+function body empty for now.
+
+
+Hint
+Similar to a setter method, a getter is created using the get keyword, followed by a 
+function declaration.
+
+10.10 In the body of the getter, create an if…else statement to check if _meal and 
+_price values exist (or are truthy values). If so, return a string telling potential 
+website visitors what Today’s Special is. For example: “Today’s Special is Spaghetti 
+for $5!”
+
+If _meal and _price values do not exist (or are falsy) return the string 'Meal or 
+price was not set correctly!'.
+
+
+Hint
+You may remember from the Conditionals lesson that empty strings and 0 are falsy 
+values. Therefore, the initial values will evaluate as false until appropriate values
+have been assigned.
+
+Get Today's Special
+
+10.11 Finally, use the getter method to console.log() Today’s Special.
+Assuming you used the meal setter to assign a string, and the price setter to assign 
+a number in task 8, you should see Today’s Special logged to the console.
+
+If you want to extend your learning on this project, try adding an array of meals and
+prices to randomly set and get Today’s Special!
+
+
+Hint
+Access the todaysSpecial getter inside of the console.log() parentheses.
+
+
+======================================================================================
+TEAM STATISTICS PROJECT TEAM STATISTICS PROJECT TEAM STATISTICS PROJECT TEAM STATISTICS
+=======================================================================================
+Team Stats
+We want to create, retrieve, and add information about your favorite sports team. 
+Basketball, soccer, tennis, or water polo, you pick it. It’s your job to create data 
+using the JavaScript data structures at your disposal: arrays and objects.
+
+After we create these data structures in this project, feel free to challenge yourself
+to gain insights from them. For example, you might want to get the total number of 
+games your team has played, or the average score of all of their games.
+
+If you get stuck during this project or would like to see an experienced developer 
+work through it, click “Get Unstuck“ to see a project walkthrough video.
+
+Populating Data
+1. Let’s make a data structure to store the information about our team. Declare a 
+const variable called team and set it to an empty object.
+
+Hint
+Remember that you can initialize objects using curly braces { }.
+
+2. Our team has players and the games that they have played. Let’s represent both of 
+these by adding two properties to your team object. Add a _players property and a 
+_games property and initialize both to empty arrays.
+
+
+Hint
+Inside the curly braces of the team object, add key: value pairs for _players and 
+_games properties. Remember to separate each key: value pair with a comma.
+
+You can create empty arrays using square brackets [ ].
+
+3. Next, populate the empty_players array with three players. Each player should be 
+an object containing three properties: firstName, lastName, and age. Put each player 
+on a new line to prevent the line from getting too long.
+
+
+Hint
+If we want to add a player named Pete Wheeler, age 54, your object will look like the
+following:
+
+{firstName: 'Pete', lastName: 'Wheeler', age: 54}
+ 
+Remember to separate each object with a comma.
+
+4. Let’s do the same for our _games array. Populate the empty array with three games.
+Each game should be an object containing three properties: opponent, teamPoints, 
+opponentPoints.
+
+
+Hint
+Make sure to add three new objects inside the _games array. Separate each object with
+a comma.
+
+Getting Data
+5. Create a getter method called players to retrieve the _players property. Inside 
+the getter method, return the _players property.
+
+For the scope of this project, we won’t need to create setter methods, because we 
+don’t want anyone to change the data saved to the properties.
+
+Hint
+Remember that we can access the calling object’s internal properties using the this 
+keyword.
+
+Make sure that you add a comma after the closing square bracket (]) of the _games 
+array. Without this comma, our program will throw a syntax error!
+
+6. Create another getter method called games to retrieve the _games property. Inside 
+the getter method, return the _games property.
+
+Hint
+Make sure to add a comma after the closing curly bracket (}) of the players() getter 
+method. Without this comma, our program will throw a syntax error!
+
+Adding Data
+7. We want to add a new player to our team. Add a .addPlayer() method to the team 
+object. This method should take in three parameters: newFirstName, newLastName, and 
+newAge.
+
+Inside the method, create a player object by setting the three parameters to be the 
+values for the object’s three properties: firstName, lastName, age. Finally, add the 
+player object to the team‘s _players array.
+
+Hint
+You can add objects to an array using the .push() method.
+
+Make sure to add a comma after the closing curly bracket (}) of the games() getter 
+method. Without this comma, our program will throw a syntax error!
+
+8. Below the team object, let’s try out our new .addPlayer() method to add a new 
+player: Bugs Bunny, age 76. Log the team‘s _players property to check that our new 
+player was added.
+
+Hint
+You can use the .players() getter method to console.log() the _players property like
+below:
+
+console.log(team.players); 
+ 
+9. The scorekeeper has some new information for us! Create a method for adding game 
+results called addGame that takes three parameters: newOpponent, newTeamPoints, 
+newOpponentPoints.
+
+Inside the .addGame() method, create a game object by setting the three parameters 
+to be the values for the object’s three properties: opponent, teamPoints, 
+opponentPoints. Add the game object to the team‘s _games array.
+
+
+Hint
+Make sure to add a comma after the closing curly bracket (}) of the .addPlayer() 
+method. Without this comma, our program will throw a syntax error!
+
+10. Finally, below our team object, use the .addGame() method to add a record of a 
+new game. Our team played against the 'Titans' where we scored 100 points and the 
+opponent scored 98 points.
+
+Log the team‘s _games property to check that our new game record was properly added.
+
+Hint
+Make sure to call .addGame() outside the team object definition.
+Remember that you can use the .games() getter method to console.log() the _games 
+property like below:
+
+console.log(team.games); 
+
+11. Get the total number of games your team has played, or the average score of all 
+of their games

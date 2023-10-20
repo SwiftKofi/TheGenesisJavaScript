@@ -1,0 +1,326 @@
+NB: When the data stored on an object is a function we call that a method. 
+A property is what an object has, while a method is what an object does.
+
+=========================================================================
+ACCESSING VALUES OF OBJECTS USING DOT NOTATION
+=========================================================================
+let spaceship = {
+  homePlanet: 'Earth',
+  color: 'silver',
+  'Fuel Type': 'Turbo Fuel',
+  numCrew: 5,
+  flightPath: ['Venus', 'Mars', 'Saturn']
+};
+
+1. Let’s use the dot operator to access the value of numCrew from the spaceship 
+object in the code editor. Create a variable crewCount and assign the spaceship‘s 
+numCrew property to it.
+
+Hint
+Create a variable with a value of the object’s property:
+const variableName = objectName.propertyName;
+
+2. Again using the dot operator, create a variable planetArray and assign the 
+spaceship‘s flightPath property to it.
+
+Hint
+Create a variable with a value of the object’s property:
+const variableName = objectName.propertyName;
+
+3. Let’s use the dot operator to access the value of all properties from the spaceship
+object. 
+E.g, Create a variable crewCount and assign the spaceship‘s numCrew property to it
+
+==================================================================================================
+ACCESSING AN OBJECTS VALUE USING BRACKET NOTATION
+==================================================================================================
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  'Active Mission' : true,
+  homePlanet : 'Earth', 
+  numCrew: 5
+ };
+
+1.Let’s use bracket notation to access the value of 'Active Mission' from the 
+spaceship object in the code editor. Create a variable isActive and assign the 
+spaceship‘s 'Active Mission' property to it.
+
+Hint
+let variableName = objectName['propertyName']
+
+2.Using bracket notation and the propName variable provided, console.log() the 
+value of the 'Active Mission' property.
+
+Hint
+console.log(objectName[variableName])
+
+==================================================================================================
+PROPERTY ASSIGNMENT
+==================================================================================================
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth',
+  color: 'silver',
+  'Secret Mission' : 'Discover life outside of Earth.'
+};
+
+1.Reassign the color property of the spaceship object to have a value 
+of 'glorious gold'
+
+Hint
+objectName['Property Name'] = 'New Property Value';
+objectName.propName = 'New Prop Value';
+
+2.Without changing lines 1 - 6, add a numEngines property with a numeric value 
+between 1 and 10 to the spaceship object.
+
+Hint
+objectName['Property Name'] = 'New Property Value';
+objectName.propName = 'New Prop Value';
+
+3.Use the delete operator to remove the 'Secret Mission' property from the 
+spaceship object.
+
+Hint
+delete objectName['Property Name'];
+delete objectName.propName;
+
+
+4.Imagine we have an object that represents a book, and we want to access different 
+properties of the book using bracket notation: The properties are 
+title, author, year, genre, first week sales. 
+
+========================================================================
+METHODS METHODS METHODS METHODS METHODS METHODS METHODS METHODS METHODS
+========================================================================
+
+let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, 
+which we do not care for.';
+
+1. Below the retreatMessage variable in the code editor, create an alienShip object.
+It should contain a method retreat() which will console.log() the retreatMessage.
+Hint
+let objectName = {
+  methodName() {
+    console.log('The methodName method was invoked!')
+  }
+};
+
+2. Add another method to your object literal. This method, takeOff(), should 
+console.log() the string 'Spim... Borp... Glix... Blastoff!'.
+
+Hint
+Don’t forget to separate your methods with commas just as you would any other 
+key-value pairs:
+
+let objectName = {
+  methodName() {
+    console.log('The methodName method was invoked!')
+  }, 
+  secondMethodName() {
+     console.log('The secondMethodName method was invoked!')
+}
+};
+
+3.Invoke your two methods: first .retreat() then .takeOff().
+Hint
+objectName.methodName()
+
+4. Sure, here's another example of an object with methods. Let's create an object 
+to represent a basic calculator that can perform addition, subtraction, 
+multiplication, and division:
+
+
+5. Create an object to return full name of 5 users and increase age by 1. 3 are 
+female and 2 are males.
+
+
+// ==========================================================================
+// NESTED OBJECTS NESTED OBJECTS NESTED OBJECTS NESTED OBJECTS NESTED OBJECTS
+// ========================================================================== 
+
+let spaceship = {
+  passengers: [{name: 'Space Dog'}], 
+  telescope: {
+    yearBuilt: 2018,
+    model: "91031-XLT",
+    focalLength: 2032 
+  },
+  crew: {
+    captain: { 
+      name: 'Sandra', 
+      degree: 'Computer Engineering', 
+      encourageTeam() { console.log('We got this!') },
+     'favorite foods': ['cookies', 'cakes', 'candy', 'spinach'] }
+  },
+
+  engine: {
+    model: "Nimbus2000"
+  },
+
+  nanoelectronics: {
+    computer: {
+      terabytes: 100,
+      monitors: "HD"
+    },
+
+    'back-up': {
+      battery: "Lithium",
+      terabytes: 50
+    }
+  }
+}; 
+
+5.0 Create a variable capFave and assign the captain‘s favorite food (the element in 
+the 0th index of her 'favorite foods' array) to it. Make sure to use bracket and dot 
+notation to get the value of the food through nested access (don’t just copy the 
+value into the variable!)
+
+Hint
+spaceship.crew.captain['favorite foods'] will give us access to the array of the 
+captain‘s favorite foods, but there’s one additional step to get the first item in 
+that array.
+
+
+5.1 Right now the passengers property has a value of null. Instead, assign as its 
+value an array of objects. These objects should represent the spaceship‘s passengers 
+as individual objects. Make at least one passenger object in the array that has at 
+least one key-value pair on it.
+
+Hint
+passengers : [{name: 'Space Dog'}]
+
+5.2 Create a variable firstPassenger and assign the first passenger as its value 
+(the element in the 0th index of the spaceship.passengers array you just made). 
+Make sure to use bracket and dot notation to get the passenger object through 
+nested access (don’t just copy the object into the variable!)
+
+Hint
+spaceship.passengers[0]
+
+5.3 print out the value of all properties
+
+5.4 Print out all the values of the object Below
+let spaceship = {
+  crew: {
+    captain: { 
+      name: 'Lily', 
+      degree: 'Computer Engineering', 
+      cheerTeam() { console.log('You got this!') } 
+    },
+    'chief officer': { 
+      name: 'Dan', 
+      degree: 'Aerospace Engineering', 
+      agree() { console.log('I agree, captain!') } 
+    },
+    medic: { 
+      name: 'Clementine', 
+      degree: 'Physics', 
+      announce() { console.log(`Jets on!`) } },
+    translator: {
+      name: 'Shauna', 
+      degree: 'Conservation Science', 
+      powerFuel() { console.log('The tank is full!') } 
+    }
+  }
+}; 
+
+
+// ==========================================================================
+// PASSBY REFERENCE PASSBY REFERENCE PASSBY REFERENCE PASSBY REFERENCE
+// ========================================================================== 
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth'
+};
+
+6.0 Write a function greenEnergy() that has an object as a parameter and sets that 
+object’s 'Fuel Type' property to 'avocado oil'.
+
+Hint
+let functionName = objectParam => {
+  objectParam['Property Name'] = 'New Property Value';
+};
+
+6.1 Write a function remotelyDisable() that has an object as a parameter and sets 
+(or reassigns) that object’s disabled property to true.
+Hint
+let functionName = objectParam => {
+  objectParam.propertyName = 'A Property Value';
+};
+
+6.2 Call your two functions with the spaceship object in the code editor, then 
+console.log() the spaceship object to confirm those properties were changed/added.
+
+6.3.0 Write a function that modifies the property of the following objects
+const person_a = {
+    name:"Alice",
+    age:27
+}
+
+6.3.1 - Modify this object
+const person_b = {
+    name:"Maleek",
+    age:67
+}
+
+6.3.2 - Modify this object
+const person_c = {
+    name:"Wizkid",
+    age:37
+}
+
+6.3.3 - Modify this object
+const person_d = {
+    name:"Joyce",
+    age:75
+}
+
+
+
+// ==========================================================================
+// LOOPING THROUGH OBJECTS LOOPING THROUGH OBJECTS LOOPING THROUGH OBJECTS 
+// ========================================================================== 
+
+let spaceship = {
+    crew: {
+    captain: { 
+        name: 'Lily', 
+        degree: 'Computer Engineering', 
+        cheerTeam() { console.log('You got this!') } 
+        },
+    'chief officer': { 
+        name: 'Dan', 
+        degree: 'Aerospace Engineering', 
+        agree() { console.log('I agree, captain!') } 
+        },
+    medic: { 
+        name: 'Clementine', 
+        degree: 'Physics', 
+        announce() { console.log(`Jets on!`) } },
+    translator: {
+        name: 'Shauna', 
+        degree: 'Conservation Science', 
+        powerFuel() { console.log('The tank is full!') } 
+        }
+    }
+}; 
+
+7.0 Using for...in, iterate through the spaceship.crew object in the code editor and 
+console.log() a list of crew roles and names in the following 
+format: '[crew member's role]: [crew member's name]', e.g.,'chief officer: Dan'
+
+Hint
+for (let variableName in outerObject.innerObject) {
+  console.log(`${variableName}: ${outerObject.innerObject[variableName].propertyName}`)
+};
+
+7.1 Using for...in, iterate through the spaceship.crew object in the code editor 
+and console.log() a list of crew names and degrees in the following 
+format: '[crew member's name]: [crew member's degree]', i.e.,'Lily: Computer Engineering'.
+
+Hint
+for (let variableName in outerObject.innerObject) {
+  console.log(`${outerObject.innerObject[variableName].propertyName}: ${outerObject.innerObject[variableName].differentPropertyName}`)
+};

@@ -1,0 +1,69 @@
+Exercise 1:
+Write a function that takes an array of numbers and returns the sum of all the 
+numbers using reduce.
+
+Exercise 2:
+Write a function that takes an array of strings and concatenates them into a 
+single string using reduce.
+
+Exercise 3:
+Write a function that takes an array of objects with a 'quantity' property and 
+returns the total quantity using reduce.
+
+Exercise 4:
+Write a function that takes an array of numbers and returns the product of all 
+the numbers using reduce.
+
+Exercise 5:
+Write a function that takes an array of objects with a 'completed' property 
+(boolean) and counts the number of completed objects using reduce.
+
+Exercise 6:
+Write a function that takes an array of strings and determines the longest 
+string using reduce.
+
+Exercise 7:
+Write a function that takes an array of objects with 'price' properties and 
+calculates the total price of all products using reduce.
+
+Exercise 8:
+Write a function that takes an array of numbers and returns the average value 
+using reduce.
+
+Exercise 9:
+Write a function that takes an array of strings and counts the occurrences of 
+each string, returning an object with the counts using reduce.
+
+Exercise 10:
+Write a function that takes an array of objects with 'age' properties and calculates 
+the sum of all ages using reduce.
+
+Exercise 11:
+Write a function that takes an array of strings and checks if all the strings have 
+the same length using reduce.
+
+Exercise 12:
+Write a function that takes an array of objects with 'rating' properties and 
+calculates the average rating using reduce.
+
+Exercise 13:
+Write a function that takes an array of strings and concatenates them in reverse 
+order using reduce.
+
+Exercise 14:
+Write a function that takes an array of numbers and finds the maximum number using 
+reduce.
+
+Exercise 15:
+Write a function that takes an array of strings and returns an object where the 
+keys are the strings and the values are their lengths using reduce.
+
+
+Worked Example 
+Add all the numbers in the array
+const numbers = [1, -1, 2, 3];
+
+const sum = numbers.reduce((accumulator, currentValue) => {
+    return  accumulator + currentValue;
+}, 0);
+console.log(sum);

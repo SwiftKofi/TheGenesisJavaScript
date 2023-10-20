@@ -1,0 +1,61 @@
+Exercise 1:
+Write a function that takes an array of numbers and returns the index of the first 
+occurrence of a negative number using indexOf.
+
+Exercise 2:
+Write a function that takes an array of strings and returns the index of the first 
+occurrence of a string that starts with the letter 'A' using indexOf.
+
+Exercise 3:
+Write a function that takes an array of objects with a 'name' property and returns 
+the index of the object with a specific name using indexOf.
+
+Exercise 4:
+Write a function that takes an array of numbers and returns the index of the first 
+occurrence of a number that is divisible by 7 using indexOf.
+
+Exercise 5:
+Write a function that takes an array of objects with a 'completed' property 
+(boolean) and returns the index of the first occurrence of an object that is not
+completed using indexOf.
+
+Exercise 6:
+Write a function that takes an array of strings and returns the index of the first 
+occurrence of a string that has more than 10 characters using indexOf.
+
+Exercise 7:
+Write a function that takes an array of objects with 'age' properties and returns 
+the index of the oldest person using indexOf.
+
+Exercise 8:
+Write a function that takes an array of strings and returns the index of the first 
+occurrence of a string that contains the word 'JavaScript' using indexOf.
+
+Exercise 9:
+Write a function that takes an array of objects with 'price' properties and returns 
+the index of the cheapest product using indexOf.
+
+Exercise 10:
+Write a function that takes an array of numbers and returns the index of the first 
+occurrence of a number that is greater than 100 using indexOf.
+
+Exercise 11:
+Write a function that takes an array of strings and returns the index of the first 
+occurrence of a string that is a palindrome using indexOf.
+
+Exercise 12:
+Write a function that takes an array of objects with 'quantity' properties and 
+returns the index of the first occurrence of an object that has a quantity greater 
+than 10 using indexOf.
+
+Exercise 13:
+Write a function that takes an array of strings and returns the index of the first 
+occurrence of a string that ends with the letter 's' using indexOf.
+
+Exercise 14:
+Write a function that takes an array of objects with 'rating' properties and returns 
+the index of the object with the highest rating using indexOf.
+
+Exercise 15:
+Write a function that takes an array of strings and returns the index of the first 
+occurrence of a string that contains only uppercase letters using indexOf.

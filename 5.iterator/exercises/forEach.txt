@@ -1,0 +1,59 @@
+Exercise 1:
+Write a function that takes an array of numbers and prints each number to the 
+console using forEach.
+
+Exercise 2:
+Write a function that takes an array of strings and concatenates them into a 
+single string using forEach.
+
+Exercise 3:
+Write a function that takes an array of objects with a 'name' property and logs 
+the name of each object using forEach.
+
+Exercise 4:
+Write a function that takes an array of numbers and calculates the sum of all 
+the numbers using forEach.
+
+Exercise 5:
+Write a function that takes an array of objects with a 'completed' property 
+(boolean) and counts the number of completed objects using forEach.
+
+Exercise 6:
+Write a function that takes an array of strings and determines the length of 
+each string using forEach.
+
+Exercise 7:
+Write a function that takes an array of objects with 'age' properties and calculates
+the average age using forEach.
+
+Exercise 8:
+Write a function that takes an array of strings and logs the uppercase version of 
+each string using forEach.
+
+Exercise 9:
+Write a function that takes an array of objects with 'price' properties and 
+calculates the total price of all products using forEach.
+
+Exercise 10:
+Write a function that takes an array of numbers and determines the maximum 
+number using forEach.
+
+Exercise 11:
+Write a function that takes an array of strings and checks if all the strings 
+are palindromes using forEach.
+
+Exercise 12:
+Write a function that takes an array of objects with 'quantity' properties and 
+determines the total quantity using forEach.
+
+Exercise 13:
+Write a function that takes an array of strings and logs the reversed version 
+of each string using forEach.
+
+Exercise 14:
+Write a function that takes an array of objects with 'rating' properties and 
+determines the average rating using forEach.
+
+Exercise 15:
+Write a function that takes an array of strings and checks if any string contains 
+the letter 'a' using forEach.

@@ -1,0 +1,56 @@
+=============================================================
+LOOPING THROUGH THE PROPERTY & VALUES OF OBJECTS WITH FOREACH
+=============================================================
+
+const person = {
+    one: [
+      { firstName: 'John', lastName: 'Doe', age: 30 },
+      { firstName: 'Jane', lastName: 'Dramey', age: 53 }
+    ]
+  };
+  
+let totalAge = 0;  // Initialize a variable to store the total age
+  
+person.one.forEach((personObj, index) => {
+    totalAge += personObj.age;  // Add the age of the current person to the total
+    console.log(`Person ${index + 1}:`);
+    console.log(`First Name: ${personObj.firstName}`);
+    console.log(`Last Name: ${personObj.lastName}`);
+    console.log(`Age: ${personObj.age}`);
+    console.log('------------');
+});
+  
+console.log(`Total Age: ${totalAge}`);  // Log the total age
+.................................................................................
+.................................................................................
+
+
+const person = {
+    one:[
+        {firstName: 'John', lastName:'Doe', age: 30},
+        {firstName: 'Jane', lastName:'Dramey', age: 53}
+    ]
+};
+  
+person.one.forEach((personObj, index) => {
+    console.log(`Person ${index + 1}:`);
+    console.log(`First Name: ${personObj.firstName}`);
+    console.log(`Last Name: ${personObj.lastName}`);
+    console.log(`Age: ${personObj.age}`);
+    console.log('------------');
+});
+
+================
+LEARNING JOURNEY
+================
+
+Congratulations, you’ve successfully completed the Learn JavaScript course! You got an introduction to programming fundamentals using the latest JavaScript syntax. More specifically, you learned to:
+
+implement JavaScript data types, built-in methods, and variables
+use conditionals to control the flow of a program in JavaScript
+construct functions and pass data through them
+identify global and block-level scopes in JavaScript
+use arrays to store lists of data
+use loops to execute blocks of code multiple times
+use iterator methods to simplify the process of looping over arrays
+use JavaScript ES6 object syntax to model real-world items

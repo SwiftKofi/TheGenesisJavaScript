@@ -1,0 +1,79 @@
+QUE1. Write a function that takes two numbers as parameters and returns their sum.
+
+QUE2. Write a function that takes an array of numbers as a parameter and returns the 
+smallest number in the array.
+
+QUE3. Write a function that takes a string as a parameter and returns the reversed 
+version of the string.
+
+QUE4. Write a function that takes an array of strings as a parameter and returns a 
+new array with the lengths of each string.
+
+QUE5. Write a function that takes a number as a parameter and checks if it is even 
+or odd. Return "Even" if the number is even and "Odd" if it is odd.
+
+QUE6. Write a function that takes an array of numbers as a parameter and returns the 
+sum of all the positive numbers in the array.
+
+QUE7. Write a function that takes a string as a parameter and counts the number of 
+vowels (a, e, i, o, u) in the string. Return the count.
+
+QUE8. Write a function that takes an array of numbers as a parameter and returns a 
+new array with only the unique numbers (removing duplicates).
+
+QUE9. Write a function that takes a string as a parameter and checks if it is a 
+palindrome. Return true if it is a palindrome, and false otherwise. (A palindrome 
+is a word, phrase, number, or other sequence of characters that reads the same 
+forward and backward.)
+
+QUE10. Write a function that takes an array of strings as a parameter and returns a 
+new array with the strings in alphabetical order.
+
+QUE11. Write a function that takes a sentence as a parameter and returns the number 
+of words in the sentence.
+
+QUE12. Write a function that takes an array of numbers as a parameter and returns 
+the largest number in the array.
+
+QUE13. Write a function that takes a string as a parameter and returns a new string 
+with all the vowels removed.
+
+QUE14. Write a function that takes an array of numbers as a parameter and returns the
+average of all the numbers in the array.
+
+QUE16. Write a function that takes a string as a parameter and checks if it is a 
+valid email address. Return true if it is valid and false otherwise.
+
+QUE17. Write a function that takes an array of strings as a parameter and returns 
+the concatenation of all the strings in the array.
+
+QUE18. Write a function that takes a number as a parameter and checks if it is a 
+prime number. Return true if it is prime and false otherwise.
+
+QUE19. Write a function that takes an array of numbers as a parameter and returns a 
+new array with only the even numbers.
+
+QUE20. Write a function that takes a string as a parameter and capitalizes the first 
+letter of each word in the string.
+
+QUE21. Write a function that takes two arrays as parameters and returns a new array 
+with the unique elements from both arrays (removing duplicates).
+
+QUE22. Write a function that takes a number as a parameter and returns the factorial 
+of that number. The factorial of a number is the product of all positive integers 
+less than or equal to that number.
+
+QUE23. Write a function that takes a string as a parameter and checks if it is a 
+palindrome sentence. A palindrome sentence is a sentence that reads the same backward
+as forward, ignoring spaces and punctuation.
+
+QUE24. Write a function that takes an array of strings as a parameter and returns the
+number of strings that have a length greater than a specified value.
+
+QUE25. Write a function that takes a number as a parameter and checks if it is a 
+perfect number. A perfect number is a positive integer that is equal to the sum of 
+its proper divisors (excluding itself).
+
+QUE26. Write a function that takes a string as a parameter and converts it to 
+"Title Case" (the first letter of each word capitalized and all other letters 
+lowercase)

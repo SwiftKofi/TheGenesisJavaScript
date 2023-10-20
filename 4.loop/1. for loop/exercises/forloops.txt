@@ -1,0 +1,68 @@
+QUE1. Write a function that takes a number as a parameter and prints the 
+multiplication table for that number up to 10. For example, if the number is 5, 
+the function should print:
+
+python
+Copy code
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+...
+5 x 10 = 50
+
+QUE2. Write a function that takes an array of numbers as a parameter and calculates 
+the sum of all the numbers using a for loop.
+
+QUE3. Write a function that takes a string as a parameter and prints each character 
+of the string in reverse order, using a for loop.
+
+QUE4. Write a function that takes an array of strings as a parameter and concatenates
+all the strings into a single string, using a for loop.
+
+QUE5. Write a function that takes a number as a parameter and checks if it is a prime
+number using a for loop. Return true if it is prime and false otherwise.
+
+QUE6. Write a function that takes an array of numbers as a parameter and finds the 
+smallest number in the array using a for loop.
+
+QUE7. Write a function that takes a string as a parameter and counts the number of 
+vowels (a, e, i, o, u) in the string using a for loop. Return the count.
+
+QUE8. Write a function that takes an array of numbers as a parameter and calculates 
+the average of all the numbers using a for loop.
+
+QUE9. Write a function that takes a number as a parameter and prints a countdown 
+from that number to 1, using a for loop.
+
+QUE10. Write a function that takes an array of strings as a parameter and finds 
+the longest string in the array using a for loop.
+
+QUE11. Write a function that takes a number as a parameter and prints a triangle 
+pattern of asterisks (*). The triangle should have the number of rows equal to the 
+input number. For example, if the number is 5, the function should print:
+
+markdown
+Copy code
+*
+**
+***
+****
+*****
+
+QUE12. Write a function that takes an array of numbers as a parameter and checks if 
+all the numbers in the array are positive, using a for loop. Return true if all 
+numbers are positive, and false otherwise.
+
+QUE13. Write a function that takes a string as a parameter and counts the number of 
+occurrences of a specified character in the string using a for loop. Return the 
+count.
+
+QUE14. Write a function that takes an array of numbers as a parameter and returns a 
+new array with only the odd numbers from the original array, using a for loop.
+
+QUE15. Write a function that takes a number as a parameter and prints the Fibonacci 
+sequence up to that number. The Fibonacci sequence is a series of numbers where each 
+number is the sum of the two preceding ones. For example, if the number is 8, the 
+function should print:
+
+0, 1, 1, 2, 3, 5, 8

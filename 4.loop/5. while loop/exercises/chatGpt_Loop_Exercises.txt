@@ -1,0 +1,195 @@
+WHILE LOOPS
+Exercise 1:
+Write a while loop that randomly selects and prints three elements 
+from an array of numbers.
+
+Exercise 2:
+Create a while loop that randomly selects and prints five names 
+from an array of strings.
+
+Exercise 3:
+Write a while loop that randomly selects and prints four colors 
+from an array of color names.
+
+Exercise 4:
+Create a while loop that randomly selects and prints two fruits 
+from an array of fruit names.
+
+Exercise 5:
+Write a while loop that randomly selects and prints three 
+characters from an array of characters.
+
+Exercise 6:
+Create a while loop that randomly selects and prints six 
+elements from an array of any type.
+
+Exercise 7:
+Write a while loop that randomly selects and prints four 
+words from an array of sentences.
+
+Exercise 8:
+Create a while loop that randomly selects and prints three 
+animals from an array of animal names.
+
+Exercise 9:
+Write a while loop that randomly selects and prints five even 
+numbers from an array of numbers.
+
+Exercise 10:
+Create a while loop that randomly selects and prints two 
+odd numbers from an array of numbers.
+
+Exercise 11:
+Write a while loop that randomly selects and prints four characters 
+from an array of letters ('a', 'b', 'c', 'd', 'e', 'f', 'g').
+
+Exercise 12:
+Create a while loop that randomly selects and prints five country names 
+from an array of countries.
+
+Exercise 13:
+Create a while loop that randomly selects and prints six words from an 
+array of sentences.
+
+Exercise 14:
+Write a while loop that randomly selects and prints four unique elements 
+from an array of numbers, ensuring no element is repeated in the output.
+
+......................................................................
+In each of these exercises, you can use the isPrime function provided 
+earlier to check if a number is prime. Additionally, you can modify 
+the loop condition and the termination criteria based on the specific 
+requirements of each exercise.
+......................................................................
+
+Exercise 15:
+Write a while loop that randomly selects and prints three prime numbers 
+from an array of numbers.
+
+Exercise 16:
+Write a while loop that randomly selects and prints five prime numbers 
+from an array of numbers.
+
+Exercise 17:
+Write a while loop that randomly selects and prints prime numbers from 
+an array until a non-prime number is encountered.
+
+Exercise 18:
+Write a while loop that randomly selects and prints prime numbers from an 
+array until the sum of the selected prime numbers exceeds a certain threshold.
+
+Exercise 19:
+Write a while loop that randomly selects and prints prime numbers from an array 
+until the product of the selected prime numbers exceeds a certain limit.
+
+Exercise 20:
+Write a while loop that randomly selects and prints prime numbers from an array 
+until a prime number greater than 100 is encountered.
+
+Exercise 21:
+Write a while loop that randomly selects and prints prime numbers from an array 
+until the average of the selected prime numbers is greater than a specified value.
+
+.............................................................................................................
+WHILE LOOP EXCERCISE
+1. Below the cards array, declare a variable, currentCard, with the let keyword 
+but don’t assign it a value.
+const cards = ['diamond', 'spade', 'heart', 'club'];
+
+2. Create a while loop with a condition that checks if the currentCard does not 
+have that value 'spade'. Inside the block of your while loop, add the following 
+line of code:
+
+currentCard = cards[Math.floor(Math.random() * 4)];
+Math.floor(Math.random() * 4) 
+
+will give us a random number from 0 to 3. We’ll use this number to index the 
+cards array, and assign the value of currentCard to a random element from 
+that array
+
+3. Awesome! Your loop is running, but you can’t tell because it doesn’t output 
+anything. Let’s add a console.log() statement to our while block. Inside the block, 
+after you assign currentCard a new value, log currentCard to the console.
+For fun you can run your code a few times and see how the output changes!
+
+SOLUTION 
+let currentCard;
+
+while (currentCard !== 'spade') {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+	console.log(currentCard);
+}
+.............................................................
+MORE OF WHILE LOOP Exercise
+.............................................................
+
+QUE1. Write a function that takes a number as a parameter and prints all the numbers 
+from 1 to that number using a while loop.
+
+QUE2. Write a function that takes an array of numbers as a parameter and calculates 
+the product of all the numbers using a while loop.
+
+QUE3. Write a function that takes a string as a parameter and prints each character 
+of the string in reverse order using a while loop.
+
+QUE4. Write a function that takes an array of strings as a parameter and concatenates 
+all the strings into a single string using a while loop.
+
+QUE5. Write a function that takes a number as a parameter and checks if it is a prime
+number using a while loop. Return true if it is prime and false otherwise.
+
+QUE6. Write a function that takes an array of numbers as a parameter and finds the 
+smallest number in the array using a while loop.
+
+QUE7. Write a function that takes a string as a parameter and counts the number of 
+vowels (a, e, i, o, u) in the string using a while loop. Return the count.
+
+QUE8. Write a function that takes an array of numbers as a parameter and calculates 
+the average of all the numbers using a while loop.
+
+QUE9. Write a function that takes a number as a parameter and prints a countdown from
+that number to 1 using a while loop.
+
+QUE10. Write a function that takes an array of strings as a parameter and finds the 
+longest string in the array using a while loop.
+
+QUE11. Write a function that takes a number as a parameter and prints a square pattern
+of asterisks (*). The square should have the number of rows and columns equal to the 
+input number. For example, if the number is 4, the function should print:
+
+markdown
+Copy code
+****
+****
+****
+****
+
+QUE12. Write a function that takes an array of numbers as a parameter and checks if 
+there are any negative numbers in the array using a while loop. Return true if there 
+are any negative numbers, and false otherwise.
+
+QUE13. Write a function that takes a string as a parameter and checks if it is a 
+palindrome using a while loop. Return true if it is a palindrome, and false otherwise.
+
+QUE14. Write a function that takes an array of numbers as a parameter and returns a 
+new array with only the even numbers from the original array, using a while loop.
+
+QUE15. Write a function that takes a number as a parameter and calculates the 
+factorial of that number using a while loop. The factorial of a number is the product
+of all positive integers less than or equal to that number.
+
+QUE16. These additional while loop exercises will give you more opportunities to 
+practice using while loops and solve problems in JavaScript. Give them a try and 
+feel free to ask for further clarification if needed. Happy coding!
+
+
+
+
+
+
+
+
+
+
+
+

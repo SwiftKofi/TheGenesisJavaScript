@@ -1,0 +1,47 @@
+QUE1. Write a function that takes a number as a parameter and prints all the numbers 
+from 1 to that number using a do...while loop.
+
+QUE2. Write a function that takes an array of numbers as a parameter and calculates 
+the sum of all the numbers using a do...while loop.
+
+QUE3. Write a function that takes a string as a parameter and prints each character 
+of the string in reverse order using a do...while loop.
+
+QUE4. Write a function that takes an array of strings as a parameter and concatenates
+all the strings into a single string using a do...while loop.
+
+QUE5. Write a function that takes a number as a parameter and checks if it is a prime 
+number using a do...while loop. Return true if it is prime, and false otherwise.
+
+QUE6. Write a function that takes an array of numbers as a parameter and finds the 
+smallest number in the array using a do...while loop.
+
+QUE7. Write a function that takes a string as a parameter and counts the number of 
+vowels (a, e, i, o, u) in the string using a do...while loop. Return the count.
+
+QUE8. Write a function that takes an array of numbers as a parameter and calculates 
+the average of all the numbers using a do...while loop.
+
+QUE9. Write a function that takes a number as a parameter and prints a countdown from
+that number to 1 using a do...while loop.
+
+QUE10. Write a function that takes an array of strings as a parameter and finds the 
+longest string in the array using a do...while loop.
+
+QUE11. Write a function that takes a number as a parameter and prints the Fibonacci 
+sequence up to that number using a do...while loop.
+
+QUE12. Write a function that takes an array of numbers as a parameter and returns a 
+new array with only the positive numbers from the original array using a 
+do...while loop.
+
+QUE13. Write a function that takes an array of strings as a parameter and checks if 
+a specific string exists in the array using a do...while loop. Return true if it 
+exists, and false otherwise.
+
+QUE14. Write a function that takes an array of objects representing students, where 
+each object contains a student's name and score. The function should print the names 
+and scores of all the students using a do...while loop.
+
+QUE15. Write a function that takes an array of numbers as a parameter and calculates 
+the product of all the numbers using a do...while loop.

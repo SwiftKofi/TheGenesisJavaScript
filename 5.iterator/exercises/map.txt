@@ -1,0 +1,60 @@
+Exercise 1:
+Write a function that takes an array of numbers and returns a new array where each 
+number is doubled using map.
+
+Exercise 2:
+Write a function that takes an array of strings and returns a new array where each 
+string is uppercase using map.
+
+Exercise 3:
+Write a function that takes an array of objects with a 'name' property and returns 
+a new array with only the names using map.
+
+Exercise 4:
+Write a function that takes an array of numbers and returns a new array where each 
+number is squared using map.
+
+Exercise 5:
+Write a function that takes an array of objects with a 'completed' property 
+(boolean) and returns a new array with only the completed objects using map.
+
+Exercise 6:
+Write a function that takes an array of strings and returns a new array where 
+each string is reversed using map.
+
+Exercise 7:
+Write a function that takes an array of objects with 'age' properties and returns 
+a new array with the ages doubled using map.
+
+Exercise 8:
+Write a function that takes an array of strings and returns a new array where each 
+string has an exclamation mark appended to it using map.
+
+Exercise 9:
+Write a function that takes an array of objects with 'price' properties and returns
+a new array with discounted prices (prices reduced by 10%) using map.
+
+Exercise 10:
+Write a function that takes an array of numbers and returns a new array where each 
+number is incremented by 1 using map.
+
+Exercise 11:
+Write a function that takes an array of strings and returns a new array where each 
+string is transformed to title case (first letter uppercase, rest lowercase) 
+using map.
+
+Exercise 12:
+Write a function that takes an array of objects with 'quantity' properties and 
+returns a new array with the quantities halved using map.
+
+Exercise 13:
+Write a function that takes an array of strings and returns a new array where 
+each string has all vowels removed using map.
+
+Exercise 14:
+Write a function that takes an array of objects with 'rating' properties and 
+returns a new array with the ratings converted to a scale of 1 to 10 using map.
+
+Exercise 15:
+Write a function that takes an array of strings and returns a new array where each 
+string is padded with an additional letter 'a' at the end using map.

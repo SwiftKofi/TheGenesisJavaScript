@@ -1,0 +1,239 @@
+
+FUNCTION EXPRESSION
+7)a. Let’s say we have a plant that we need to water once a week on Wednesdays. 
+We could define a function expression to help us check the day of the week 
+and if the plant needs to be watered:
+
+Create a variable named plantNeedsWater using the const variable keyword.
+Assign an anonymous function that takes in a parameter of day to plantNeedsWater.
+
+b. Now we need to add some code to the function body of plantNeedsWater():
+
+In the function body add an if conditional that checks day === 'Wednesday'.
+If the conditional is truthy, inside the if code block, use the return keyword 
+to return true.
+
+c. On days that aren’t 'Wednesday', plantNeedsWater() should return false:
+Add an else statement after the if statement.
+Inside the else statement use the return keyword to return false.
+
+d. Call the plantNeedsWater() and pass in 'Tuesday' as an argument.
+
+e. Let’s check that plantNeedsWater() returned the expected value.
+Log plantNeedsWater('Tuesday') to the console. If it worked correctly, 
+you should see false logged to the console.
+
+ARROW FUNCTION
+8) const plantNeedsWater = function(day) {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+a. convert the above function to arrow function
+
+const plantNeedsWater = (day) => {
+  return day === 'Wednesday' ? true : false;
+};
+
+b.Let’s refactor plantNeedsWater() to be a concise body. Notice that we’ve already 
+converted the if/else statement to a ternary operator to make the code fit on one line
+
+ans: const plantNeedsWater = day => 
+   day === 'Wednesday' ? true : false;
+
+c. document.addEventListener('click', function(){
+	console.log('click')	
+	}
+)
+
+d. function isPositive(number){
+	return number >= 0
+}
+
+e. function randomNumber() {
+	return Math.random
+}
+
+f. function sum(a,b){
+	return a + b
+}
+
+
+PROJECT - ROCK PAPER  SCISSORS
+9. 
+a. The user should be able to choose ‘rock’, ‘paper’, or ‘scissors’ when the game starts.
+Using const and arrow function syntax, create a function named getUserChoice that takes 
+a single parameter userInput.
+
+b. The user should be able to choose ‘rock’, ‘paper’, or ‘scissors’ when the game starts.
+Using const and arrow function syntax, create a function named getUserChoice that takes 
+a single parameter userInput.
+userInput = userInput.toLowerCase();
+
+
+c. When getting the user’s choice, you should also check to make sure that the user 
+typed a valid choice: ‘rock’, ‘paper’, or ‘scissors’.
+Inside getUserChoice(), write an if/else statement that makes sure the userInput 
+is either 'rock', 'paper', or 'scissors'. If it does, then return the userInput. 
+If not, use console.log to print an error message to the console.
+
+d. Test the function by calling it with valid and invalid input, and printing 
+the results to the console.
+You can delete this when you know your function works.
+
+e. Now we need to have the computer make a choice. Create a new function named 
+getComputerChoice with no parameters. Inside its block, utilize Math.random() 
+and Math.floor() to get a whole number between 0 and 2. Then, depending on the number, 
+return either 'rock', 'paper', or 'scissors'.
+
+Hint:
+Since there are three choices, you can create a random number between 0 and 2 
+with code like this:
+Math.floor(Math.random() * 3);
+Then, you can utilize an if/else or a switch statement to return the computer’s 
+choice, like so:
+
+f. Test the function by calling it multiple times and printing the results to the console.
+You can delete this when you know your function works.
+
+g. Now it’s time to determine a winner. Create a function named determineWinner that 
+takes two parameters named userChoice and computerChoice. This function will compare 
+the two choices played and then return if the human player won, lost, or tied.
+Let’s deal with the tie condition first. Within the determineWinner() function, 
+write an if statement that checks if the userChoice parameter equals the computerChoice 
+parameter. If so, return a string that the game was a tie.
+
+h. If the game is not a tie, you’ll need to determine a winner. Begin by writing an if 
+statement that checks if the userChoice is 'rock'. Inside the if statement’s block, 
+write another if/else statement. The inner if/else should check if the computerChoice 
+is 'paper'. If so, return a message that the computer won. If not, return a message 
+that the user won.
+
+i. Next, write another if statement for if the userChoice is 'paper'.
+Inside this if statement, the computerChoice must be either 'scissors' or 'rock'. 
+Write logic that will return a winner.
+
+j. Next, write yet another if statement for if the userChoice is 'scissors'.
+Inside of this if statement, the computerChoice must either be 'rock' or 'paper'. 
+Write logic that will return a 
+
+k. Don’t forget to test your function! Check off this task when you’ve finished testing.
+
+l. Everything is set up. Now you need to start the game and log the results.
+Create a function named playGame. Inside the playGame() function, create a 
+variable named userChoice set equal to the result of calling getUserChoice(), 
+passing in either 'rock', 'paper', or 'scissors' as an argument.
+Create another variable named computerChoice, and set it equal to the 
+result of calling getComputerChoice().
+Under both of these variables, use console.log to print them to the console.
+
+m. Everything is set up. Now you need to start the game and log the results.
+Create a function named playGame. Inside the playGame() function, 
+create a variable named userChoice set equal to the result of calling 
+getUserChoice(), passing in either 'rock', 'paper', or 'scissors' as an argument.
+Create another variable named computerChoice, and set it equal to the result 
+of calling getComputerChoice().
+Under both of these variables, use console.log to print them to the console.
+
+n. Everything is set up. Now you need to start the game and log the results.
+Create a function named playGame. Inside the playGame() function, create a 
+variable named userChoice set equal to the result of calling getUserChoice(), 
+passing in either 'rock', 'paper', or 'scissors' as an argument.Create another 
+variable named computerChoice, and set it equal to the result of calling 
+getComputerChoice().
+Under both of these variables, use console.log to print them to the console.
+
+o. Finally, let’s determine who won. Inside the playGame() function, call the 
+determineWinner() function. Pass in the userChoice and computerChoice variables 
+as its parameters. Make sure to put this function call inside of a console.log() 
+statement so you can see the result.
+ 
+Then, to start the game, call the playGame() function on the last line of 
+your program.
+
+p. Make this game better by adding a secret cheat code. If a user types 
+'bomb' as their choice, then make sure they win, no matter what.
+
+
+PROJECT - SLEEP CALCULATOR
+
+1. The first problem to solve is determining how many hours of sleep you got each 
+night of the week.
+
+You can create a function that returns any given night’s number of hours of rest. 
+Instead of writing seven different functions (one for each day of the week), 
+let’s write one function with a parameter for the day.
+
+Create a function named getSleepHours with a single parameter named day.
+
+2. The function should accept a day as an argument and return the number of 
+hours you slept that night.
+For instance, if you got 8 hours of sleep on Monday night, 
+calling getSleepHours('monday') should return 8.
+Use an if/else or switch statement to implement this.
+
+3. Test the function by calling it multiple times and printing the results to 
+the console.
+You can remove the tests when you know your function works.
+
+4. Now that you’ve written a function to get the sleep hours for each night, we need 
+to do three things:
+Get the total sleep hours that you actually slept
+Get the ideal sleep hours that you prefer
+Calculate the sleep debt, if any.
+To get the total sleep hours that you actually slept, create a new function 
+named getActualSleepHours that takes no parameters.
+
+5. Inside the getActualSleepHours() function, call the getSleepHours() function 
+for each day of the week. Add the results together and return the sum using an 
+implicit return.
+
+6. To get the ideal sleep hours that you prefer, create a function named 
+getIdealSleepHours with no parameters.
+Inside the function, declare a variable named idealHours and set its value to your 
+ideal hours per night. Then return the idealHours multiplied by 7.
+You’ll want to multiply by 7 to get the total hours you prefer per week.
+
+7. Test your two new functions by calling them and printing the results to 
+the console.
+You can remove the tests when you know your functions works.
+
+8. Now that you can get the actual sleep hours and the ideal sleep hours, 
+it’s time to calculate sleep debt.
+Create a function named calculateSleepDebt with no parameters.
+Inside of its block, create a variable named actualSleepHours set equal to the 
+getActualSleepHours() function call.
+Then, create another variable named idealSleepHours, set equal to the 
+getIdealSleepHours() function call.
+
+9. Now that you have actualSleepHours and idealSleepHours, you can write a 
+few if/else statements to output the result to the console. The function 
+should fulfill this logic:
+If actual sleep equals ideal sleep, log to the console that the user got the 
+perfect amount of sleep. If the actual sleep is greater than the ideal sleep, 
+log to the console that the user got more sleep than needed.
+If the actual sleep is less than the ideal sleep, log to the console that the 
+user should get some rest.
+
+10. To make this calculator more helpful, add the hours the user is over or under 
+their ideal sleep in each log statement in calculateSleepDebt()
+
+11. On the last line of the program, start the program by calling the 
+calculateSleepDebt() function.
+
+12. For extra practice, try these: getActualSleepHours() could be implemented without 
+calling getSleepHours(). Use literal numbers and the + operator to rewrite 
+getActualSleepHours(). It should still return the total actual hours slept in the 
+week.
+
+Some people need to sleep longer than others. Rewrite getIdealSleepHours() so 
+that you can pass it an argument, like getIdealSleepHours(8) where 8 is the 
+ideal hours per night. Update the call to getIdealSleepHours() 
+in calculateSleepDebt() too.
+
+To see the solutions, open the hint.
+
+

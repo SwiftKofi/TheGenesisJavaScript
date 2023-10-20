@@ -1,0 +1,71 @@
+//Exercise 1:
+const isNightTime = true;
+const lightHouse = isNightTime ? 'Turn on the lights!' : 'Turn off the lights!';
+// console.log(lightHouse)
+
+//Exercise 2:
+let isCorrect = false;
+const marks = isCorrect ? 'Correct!' : 'Incorrect!';
+// console.log(marks)
+
+
+//Exercise 3:
+let favoritePhrase = 'Love that!';
+const phrase = favoritePhrase === 'Love That!' ? 'I love that!' : "I don't love that!";
+// console.log(phrase)
+
+//Exercise 4:
+let stopLight = 'green';
+const trafficLight = stopLight === 'red' ? 'Stop!' : stopLight === 'yellow' ? 'Slow down.' : stopLight === 'green' ? 'Go' : 'Caution, unknown!';
+// console.log(trafficLight)
+
+//Exercise 5:
+let season = 'spring';
+const weather = season === 'spring' ? 'It\'s spring! The trees are budding!' : season === 'winter' ? 'It\'s winter! Everything is covered in snow.' : 'Invalid Entry.';
+// console.log(weather)
+
+
+//Exercise 6:
+let groceryItem = 'beans';
+const shoppingCart = groceryItem === 'tomato' ? 'Tomatoes are $0.49' : groceryItem === 'papaya' ? 'Papayas are $1.29' : 'Invalid item';
+// console.log(shoppingCart)
+
+//Exercise 7: Check if a number is positive or negative
+const posNeg = -10;
+const resultPosNeg = posNeg > 0 ? 'Number is positive' : 'Number is negative';
+// console.log(resultPosNeg);
+
+//Exercise 8: Check if a person is eligible to vote
+const votingAge = 11;
+const eligible = votingAge >= 18 ? 'Eligible to vote' : 'Not eligible';
+// console.log(eligible)
+
+
+//Exercise 9: Check if a string is empty or not
+const strChecker  = 'Hello';
+const strResult = strChecker === '' ? 'string is empty' : `string is not empty, it contains the string:=> ${strChecker}`;
+// console.log(strResult);
+
+//Exercise 10: Determine the type of a value
+const valueType = typeof('Hello');
+const valueTypeReseult = valueType === 'number' ? 'value is number' : valueType === 'boolean' ? 'it\'s a boolean': valueType === 'string' ? 'It\'s a string' : 'invalid entry';
+// console.log(valueTypeReseult)
+
+
+//Exercise 11:  Check if a year is a leap year
+const year = 2020;
+const yearResult = year % 4 !== 0 ? false : year % 100 !== 0 ? true : year % 400 !== 0 ? false : true;
+// console.log(yearResult);
+
+
+//Exercise 12: Check if a number is even or odd.
+const evenOdd = 11;
+const evenOddResult = evenOdd % 2 === 0 ? 'number is even' : 'number is odd';
+// console.log(evenOddResult)
+
+
+//Exercise 13: Determine the maximum of two numbers.
+const numOne = 100;
+const numTwo = 212;
+const maxNum = numOne > numTwo ? `${numOne} is greater than ${numTwo}` : numTwo > numOne ? `${numTwo} is greater than ${numOne}` : 'Invalid number';
+// console.log(maxNum)

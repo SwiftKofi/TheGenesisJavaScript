@@ -1,0 +1,224 @@
+THE BLUE PRINT OF EXERCISES IN LOOPS FOR BETTER UNDERSTANDING
+
+
+FIND EXERCISES FOR 'FOR LOOP' THAT ITERATES OVER API'S
+.........................................................................
+API requests: When working with APIs, you may need to make a request multiple times, 
+such as retrieving data in chunks or paginating through results.
+javascript
+Copy code
+for (let i = 0; i < 5; i++) {
+  fetch(`https://api.example.com/data?page=${i}`)
+    .then(response => response.json())
+    .then(data => console.log(data));
+}
+.........................................................................
+FIND EXERCISES FOR 'FOR LOOP' FOR DOM MANIPULATION
+DOM manipulation: In web development, you can use this loop to iterate over a 
+collection of DOM elements and perform operations on them
+const elements = document.querySelectorAll('.my-element');
+for (let i = 0; i < elements.length; i++) {
+  elements[i].classList.add('highlight');
+}
+.........................................................................
+Array operations: This loop can be used to perform operations on 
+each element of an array.
+javascript
+Copy code
+const arr = [1, 2, 3, 4, 5];
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i] * 2);
+}
+
+
+DIFFERENT APPLICATION OF FOR LOOPS
+###########################################################################
+for loop:
+###########################################################################
+
+
+Printing numbers from 1 to 5:
+javascript
+Copy code
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+.........................................................................
+Calculating the sum of numbers from 1 to 10:
+javascript
+Copy code
+let sum = 0;
+for (let i = 1; i <= 10; i++) {
+  sum += i;
+}
+console.log(sum);
+
+.........................................................................
+Looping through an array and logging each element:
+javascript
+Copy code
+const arr = ['apple', 'banana', 'orange'];
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+.........................................................................
+Generating a multiplication table:
+javascript
+Copy code
+for (let i = 1; i <= 10; i++) {
+  for (let j = 1; j <= 10; j++) {
+    console.log(`${i} x ${j} = ${i * j}`);
+  }
+}
+.........................................................................
+Repeating a string a certain number of times:
+javascript
+Copy code
+const str = 'Hello';
+let repeatedStr = '';
+for (let i = 0; i < 3; i++) {
+  repeatedStr += str;
+}
+console.log(repeatedStr);
+
+###########################################################################
+for...in loop:
+###########################################################################
+
+Looping through the properties of an object and logging their values:
+javascript
+Copy code
+const obj = { a: 1, b: 2, c: 3 };
+for (let prop in obj) {
+  console.log(obj[prop]);
+}
+.........................................................................
+
+Checking if an object has a specific property:
+javascript
+Copy code
+const person = { name: 'John', age: 30, city: 'New York' };
+const hasProperty = 'age' in person;
+console.log(hasProperty);
+.........................................................................
+Logging the keys and values of an object:
+javascript
+Copy code
+const car = { make: 'Toyota', model: 'Camry', year: 2020 };
+for (let key in car) {
+  console.log(`${key}: ${car[key]}`);
+}
+.........................................................................
+Copying properties from one object to another:
+javascript
+Copy code
+const source = { a: 1, b: 2, c: 3 };
+const target = {};
+for (let prop in source) {
+  target[prop] = source[prop];
+}
+console.log(target);
+.........................................................................
+Skipping inherited properties while iterating:
+javascript
+Copy code
+const parent = { a: 1 };
+const child = Object.create(parent);
+child.b = 2;
+for (let prop in child) {
+  if (child.hasOwnProperty(prop)) {
+    console.log(prop);
+  }
+}
+.........................................................................
+
+
+
+###########################################################################
+for...of loop:
+###########################################################################
+
+Looping through an array and logging each element:
+javascript
+Copy code
+const arr = ['apple', 'banana', 'orange'];
+for (let element of arr) {
+  console.log(element);
+}
+.........................................................................
+Summing the values of an array:
+javascript
+Copy code
+const nums = [1, 2, 3, 4, 5];
+let sum = 0;
+for (let num of nums) {
+  sum += num;
+}
+console.log(sum);
+.........................................................................
+Iterating over characters in a string:
+javascript
+Copy code
+const str = 'Hello';
+for (let char of str) {
+  console.log(char);
+}
+.........................................................................
+Looping through the values of a Map:
+javascript
+Copy code
+const map = new Map();
+map.set('a', 1);
+map.set('b', 2);
+map.set('c', 3);
+for (let value of map
+.........................................................................
+
+###########################################################################
+BLOCKS OF CODE WITH EXPLANATIONS - CONVERT THEM TO PRACTICE QUESTIONS
+###########################################################################
+
+
+To compare two arrays in JavaScript and create a new array containing the similar 
+elements, you can use a for loop or array methods like filter() or includes(). 
+Here's an example using the filter() method:
+
+javascript
+Copy code
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [4, 5, 6, 7, 8];
+
+const similarElements = array1.filter(element => array2.includes(element));
+
+console.log(similarElements);
+
+
+In this example, filter() is used on array1, and the includes() method is used to check 
+if each element of array1 exists in array2. If an element is found in array2, it is included 
+in the similarElements array.
+
+Alternatively, you can use a for loop to compare the arrays:
+
+javascript
+Copy code
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [4, 5, 6, 7, 8];
+
+const similarElements = [];
+
+for (let i = 0; i < array1.length; i++) {
+  if (array2.includes(array1[i])) {
+    similarElements.push(array1[i]);
+  }
+}
+
+console.log(similarElements);
+The for loop iterates over each element of array1 and checks if it exists in 
+array2 using the includes() method. If a similar element is found, it is pushed 
+into the similarElements array. The resulting similarElements array will contain 
+the common elements [4, 5] in this example.
+
+
+
+
+
